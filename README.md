@@ -75,49 +75,6 @@ Automated-translation-in-live-sessions
 
 ---
 
-## ⚙️ Installation
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/the-Prasitha/Automated-translation-in-live-sessions.git
-```
-
-Navigate to the project:
-
-```bash
-cd Automated-translation-in-live-sessions
-```
-
-### Install Frontend
-
-```bash
-cd client
-npm install
-npm start
-```
-
-Frontend runs at:
-
-```
-http://localhost:3000
-```
-
-### Install Backend
-
-```bash
-cd server
-npm install
-npm start
-```
-
-Backend runs at:
-
-```
-http://localhost:5000
-```
-
----
 
 ## 🔄 Workflow
 
@@ -182,16 +139,6 @@ http://localhost:5000
 - Latvian
 - Estonian
 - Slovenian
-
----
-
-## 🚀 Deployment
-
-### Frontend
-https://automated-translation-in-live-sessi.vercel.app/
-
-### Backend
-https://automated-translation-backend.onrender.com
 
 ---
 
