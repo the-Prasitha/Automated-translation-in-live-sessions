@@ -69,7 +69,7 @@ io.on("connection", (socket) => {
 
           io.to(id).emit("translation", {
             text: translated,
-            audio: `http://localhost:5000/audio/${fileName}`,
+            audio: `https://automated-translation-backend.onrender.com/audio/${fileName}`,
           });
         });
       } catch (err) {
