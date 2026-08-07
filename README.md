@@ -1,72 +1,213 @@
-# Automated Translator for Live Sessions
+# 🌍 Automated Translation in Live Sessions
 
-## Overview
-Automated Translator for Live Sessions is a real-time web application that provides live subtitles and instant translation during online meetings or live sessions. The system captures spoken audio from the host, converts it into text, translates the subtitles into the viewer’s preferred language, and displays them with minimal delay.
+A Full Stack real-time web application that enables multilingual communication during online meetings. The application captures the host's speech, translates it into each participant's preferred language, displays live translated subtitles, and generates translated audio (dubbing) in real time.
 
-This project is designed to make communication easier across different languages and improve accessibility in live virtual sessions.
+## 🚀 Live Demo
 
----
+**Application:** https://automated-translation-in-live-sessi.vercel.app/
 
-## Features
-- 🎤 **Real-Time Speech Recognition** – Converts live spoken audio into text instantly
-- 🌍 **Live Translation** – Translates subtitles into multiple languages
-- 💬 **Real-Time Subtitles** – Displays captions with minimal latency
-- 👥 **Multi-User Support** – Multiple participants can join the same live session
-- 🔗 **Meeting Room Creation** – Create and join live meeting rooms
-- ⚡ **Instant Updates with WebSockets** – Fast subtitle and translation updates
-- 🎯 **Simple User Interface** – Easy-to-use meeting interface
+**Backend API:** https://automated-translation-backend.onrender.com
 
 ---
 
-## Technologies Used
+## ✨ Features
+
+- 🎥 Real-time online meetings using Jitsi Meet
+- 🎤 Speech-to-Text using Web Speech API
+- 🌐 Real-time language translation
+- 🔊 AI-powered voice dubbing using Google Text-to-Speech (gTTS)
+- 📝 Live translated subtitles
+- 👥 Host and participant roles
+- 🌍 Multiple language support
+- ⚡ Real-time communication with Socket.IO
+
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
-- HTML
-- CSS
+- React.js
+- HTML5
+- CSS3
 - JavaScript
-- Bootstrap (if used)
+- Socket.IO Client
 
 ### Backend
 - Node.js
 - Express.js
-
-### Real-Time Communication
 - Socket.IO
-- Jitsi Meet (for video conferencing)
 
-### Translation & Speech Services
+### APIs & Libraries
 - Web Speech API (Speech Recognition)
 - MyMemory Translation API
+- Google Text-to-Speech (gTTS)
+- Axios
 
-### Development Tools
-- Visual Studio Code
-- Git
-- GitHub
+### Meeting Platform
+- Jitsi Meet External API
 
----
-
-## Project Architecture
-1. User creates or joins a meeting room.
-2. Host speaks during the live session.
-3. Speech Recognition captures audio and converts speech into text.
-4. Text is sent to the backend server using Socket.IO.
-5. Backend translates the text into the selected language.
-6. Translated subtitles are sent back to connected participants.
-7. Participants view live translated subtitles in real time.
+### Deployment
+- Frontend: Vercel
+- Backend: Render
 
 ---
 
-## Folder Structure
-```bash
-Automated-Translator/
+## 📁 Project Structure
+
+```
+Automated-translation-in-live-sessions
 │
-├── public/
-│   ├── css/
-│   ├── js/
-│   └── assets/
+├── client
+│   ├── public
+│   ├── src
+│   ├── package.json
+│   └── ...
 │
-├── views/
+├── server
+│   ├── audio
+│   ├── uploads
+│   ├── index.js
+│   ├── package.json
+│   └── ...
 │
-├── server.js
-├── package.json
 └── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/the-Prasitha/Automated-translation-in-live-sessions.git
+```
+
+Navigate to the project:
+
+```bash
+cd Automated-translation-in-live-sessions
+```
+
+### Install Frontend
+
+```bash
+cd client
+npm install
+npm start
+```
+
+Frontend runs at:
+
+```
+http://localhost:3000
+```
+
+### Install Backend
+
+```bash
+cd server
+npm install
+npm start
+```
+
+Backend runs at:
+
+```
+http://localhost:5000
+```
+
+---
+
+## 🔄 Workflow
+
+1. The host creates or joins a meeting.
+2. Participants join the same meeting.
+3. Participants select their preferred language.
+4. The host speaks during the meeting.
+5. Speech Recognition converts speech into text.
+6. The text is translated into each participant's selected language.
+7. The translated text is displayed as live subtitles.
+8. Google Text-to-Speech (gTTS) converts the translated text into audio.
+9. Participants hear the translated speech in their preferred language.
+
+---
+
+## 🌍 Supported Languages
+
+- English
+- Tamil
+- Hindi
+- Telugu
+- Kannada
+- Malayalam
+- Bengali
+- Gujarati
+- Marathi
+- Punjabi
+- Urdu
+- French
+- German
+- Spanish
+- Italian
+- Portuguese
+- Russian
+- Chinese
+- Japanese
+- Korean
+- Arabic
+- Turkish
+- Thai
+- Vietnamese
+- Indonesian
+- Malay
+- Persian
+- Polish
+- Dutch
+- Swedish
+- Finnish
+- Norwegian
+- Danish
+- Czech
+- Greek
+- Hebrew
+- Romanian
+- Hungarian
+- Slovak
+- Ukrainian
+- Bulgarian
+- Croatian
+- Serbian
+- Lithuanian
+- Latvian
+- Estonian
+- Slovenian
+
+---
+
+## 🚀 Deployment
+
+### Frontend
+https://automated-translation-in-live-sessi.vercel.app/
+
+### Backend
+https://automated-translation-backend.onrender.com
+
+---
+
+## 🔮 Future Enhancements
+
+- AI-based translation using LLMs
+- Voice cloning for natural dubbing
+- Automatic language detection
+- User authentication
+- Meeting history
+- Meeting recording with translated subtitles
+- Speaker identification
+- Noise suppression
+- End-to-end encryption
+
+---
+
+
+This project is developed for educational and academic purposes.
